@@ -29,8 +29,6 @@ export default {
     click () {
       if (!this.flapperAni) {
         this.flapperAni = 'rotate'
-      } else {
-        this.flapperAni = ''
       }
     }
   },
@@ -67,6 +65,7 @@ export default {
   width: 100%;
   overflow: hidden;
   background-color: #343A40;
+  border-radius: 5px;
 }
 
 .flapper-content.flapper-top {
