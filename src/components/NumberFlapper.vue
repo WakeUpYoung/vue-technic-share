@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flapper-container text-center text-white bg-dark disable-select position-relative">
-      <div class="flapper-content flapper-top position-relative" :class="flapperAni">
+      <div :id="`flapper-top${_uid}`" class="flapper-content flapper-top position-relative" :class="flapperAni">
         <div :class="{flapping: isFlapping}">{{ numberArray[aboveIndex] }}</div>
       </div>
       <div class="flapper-content flapper-bottom">{{ numberArray[aboveIndex] }}</div>
@@ -34,7 +34,7 @@ export default {
   },
   mounted () {
     const vm = this
-    const flapperTop = document.getElementsByClassName('flapper-top')[0]
+    const flapperTop = document.getElementById(`flapper-top${vm._uid}`)
     flapperTop.addEventListener('animationstart', (e) => {
       console.log(e)
       setTimeout(() => {
