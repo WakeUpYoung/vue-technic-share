@@ -92,12 +92,18 @@ export default {
 .flapper-content.flapper-bottom {
   z-index: 3;
   line-height: 0;
+  border-top-color: #f0f0f0;
+  border-top-width: 1px;
+  border-top-style: solid;
 }
 
 .flapper-content.flapper-rear {
   z-index: 2;
   top: 0;
   line-height: 3.9rem;
+  border-bottom-color: #f0f0f0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 
 @keyframes flapdown {
