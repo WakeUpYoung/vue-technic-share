@@ -1,17 +1,16 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container">
+    <NumberFlapper></NumberFlapper>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NumberFlapper from '@/components/NumberFlapper'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NumberFlapper
   }
 }
 </script>
